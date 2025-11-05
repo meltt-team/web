@@ -3,15 +3,10 @@
 
 declare const messages: {
   "landing": {
-    "title": "Mateo Landing Page",
-    "descriptionStart": "Looking for a starting point or more instructions? Head over to",
-    "descriptionMiddle": "or the",
-    "descriptionEnd": "center.",
-    "description": "Looking for a starting point or more instructions?",
-    "templates": "Templates",
-    "learning": "Learning",
-    "deployNow": "Deploy Now",
-    "documentation": "Documentation"
+    "title": "Emms Landing Page",
+    "description": "Something is coming...",
+    "deployNow": "Waiting list",
+    "documentation": "Not interested"
   },
   "logo": {
     "alt": "Next.js logo"

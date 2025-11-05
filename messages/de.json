@@ -1,14 +1,9 @@
 {
   "landing": {
-    "title": "Meine Landing Page",
-    "descriptionStart": "Looking for a starting point or more instructions? Head over to",
-    "descriptionMiddle": "or the",
-    "descriptionEnd": "center.",
-    "description": "Looking for a starting point or more instructions?",
-    "templates": "Templates",
-    "learning": "Learning",
-    "deployNow": "Deploy Now",
-    "documentation": "Documentation"
+    "title": "Emms Landing Page",
+    "description": "Etwas kommt...",
+    "deployNow": "Wartenliste",
+    "documentation": "Nicht interessiert"
   },
   "logo": {
     "alt": "Next.js logo"

@@ -1,14 +1,9 @@
 {
   "landing": {
-    "title": "Página de inicio de Mateo",
-    "descriptionStart": "¿Buscas un punto de partida o más instrucciones? Dirígete a",
-    "descriptionMiddle": "o al centro de",
-    "descriptionEnd": "",
-    "description": "¿Buscas un punto de partida o más instrucciones?",
-    "templates": "Plantillas",
-    "learning": "Aprendizaje",
-    "deployNow": "Implementar ahora",
-    "documentation": "Documentación"
+    "title": "Emms Landing Page",
+    "description": "Algo está llegando...",
+    "deployNow": "Lista de espera",
+    "documentation": "No me interesa"
   },
   "logo": {
     "alt": "Logo de Next.js"
