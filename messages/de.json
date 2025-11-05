@@ -2,8 +2,8 @@
   "landing": {
     "title": "Emms Landing Page",
     "description": "Etwas kommt...",
-    "deployNow": "Wartenliste",
-    "documentation": "Nicht interessiert"
+    "joinTheWaitList": "Wartenliste",
+    "notInterested": "Nicht interessiert"
   },
   "logo": {
     "alt": "Next.js logo"

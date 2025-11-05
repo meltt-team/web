@@ -5,8 +5,8 @@ declare const messages: {
   "landing": {
     "title": "Emms Landing Page",
     "description": "Something is coming...",
-    "deployNow": "Waiting list",
-    "documentation": "Not interested"
+    "joinTheWaitList": "Join wait list",
+    "notInterested": "Not interested"
   },
   "logo": {
     "alt": "Next.js logo"

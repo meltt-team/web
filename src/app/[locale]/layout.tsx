@@ -1,11 +1,18 @@
 import { notFound } from "next/navigation";
 import { Locale, hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Luckiest_Guy } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import Header from "@/components/modules/Header";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const luckiestGuy = Luckiest_Guy({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-luckiest-guy",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -52,9 +59,10 @@ export default async function LocaleLayout({
   return (
     <html className="h-full" lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${luckiestGuy.variable} bg-[#333333]! antialiased`}
       >
         <NextIntlClientProvider>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>
