@@ -1,0 +1,20 @@
+{
+  "landing": {
+    "title": "Página de inicio de Mateo",
+    "descriptionStart": "¿Buscas un punto de partida o más instrucciones? Dirígete a",
+    "descriptionMiddle": "o al centro de",
+    "descriptionEnd": "",
+    "description": "¿Buscas un punto de partida o más instrucciones?",
+    "templates": "Plantillas",
+    "learning": "Aprendizaje",
+    "deployNow": "Implementar ahora",
+    "documentation": "Documentación"
+  },
+  "logo": {
+    "alt": "Logo de Next.js"
+  },
+  "vercel": {
+    "logoAlt": "Marca de Vercel"
+  }
+}
+
