@@ -1,13 +1,19 @@
 "use client";
 
-import Button from "../atoms/Button";
+// External modules and React-related imports
 import { useTranslations } from "next-intl";
+
+// UI Components
+import Button from "../atoms/Button";
 
 function JoinTheWaitList() {
   const t = useTranslations("landing");
 
   const handleJoinTheWaitList = () => {
-    console.log("Join the wait list");
+    const emailSection = document.getElementById("email-signup");
+    if (emailSection) {
+      emailSection.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   };
 
   return (

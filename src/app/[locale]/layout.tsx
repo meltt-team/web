@@ -1,17 +1,23 @@
 import { notFound } from "next/navigation";
 import { Locale, hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Geist, Geist_Mono, Inter, Luckiest_Guy } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Inter,
+  Luckiest_Guy,
+  Vollkorn,
+} from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
-import Header from "@/components/modules/Header";
+import Header from "@/components/molecules/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const luckiestGuy = Luckiest_Guy({
-  weight: "400",
+const vollkorn = Vollkorn({
+  weight: "500",
   subsets: ["latin"],
-  variable: "--font-luckiest-guy",
+  variable: "--font-vollkorn",
 });
 
 export function generateStaticParams() {
@@ -33,16 +39,6 @@ export async function generateMetadata(
   };
 }
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export default async function LocaleLayout({
   children,
   params,
@@ -59,7 +55,7 @@ export default async function LocaleLayout({
   return (
     <html className="h-full" lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${luckiestGuy.variable} bg-[#333333]! antialiased`}
+        className={`${inter.variable} ${vollkorn.variable} bg-[#333333]! antialiased`}
       >
         <NextIntlClientProvider>
           <Header />

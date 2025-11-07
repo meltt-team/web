@@ -1,41 +1,82 @@
-import { Locale, useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
-import { use } from "react";
+// External modules and React-related imports
+import { Locale } from "next-intl";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
-import Button from "@/components/atoms/Button";
-import JoinTheWaitList from "@/components/modules/JoinTheWaitList";
 
-export default function IndexPage({ params }: PageProps<"/[locale]">) {
-  const { locale } = use(params);
+// UI Components
+import Button from "@/components/atoms/Button";
+import JoinTheWaitList from "@/components/molecules/JoinTheWaitList";
+import EmailSignup from "@/components/molecules/EmailSignup";
+import FeatureCard from "@/components/molecules/FeatureCard";
+import Title from "@/components/molecules/Title";
+import { getAttributionFromURL } from "@/utils/getAttribution";
+
+export default async function IndexPage({
+  params,
+  searchParams,
+}: PageProps<"/[locale]"> & {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+
+  const attribution = getAttributionFromURL(
+    new URLSearchParams(resolvedSearchParams as any)
+  );
+
+  const { locale } = resolvedParams;
 
   // Enable static rendering
   setRequestLocale(locale as Locale);
 
-  const t = useTranslations("landing");
+  const t = await getTranslations("landing");
 
   return (
-    <div className="flex items-center h-[calc(100vh+200px)] justify-center font-sans">
-      <main className="flex h-screen max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start">
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-white font-luckiest">
-            {t("title")}
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-300">
-              {t("description")}
-          </p>
+    <>
+      {/* Hero Section with Background Image */}
+      <div className="relative flex items-center justify-center font-sans overflow-hidden h-screen w-full">
+        <Image
+          src="/landing_v3.png"
+          alt="Landing background"
+          fill
+          className="object-cover"
+          priority
+          quality={100}
+          unoptimized
+        />
+        <main className="relative z-10 flex max-w-3xl flex-col items-center justify-between py-16 px-6 sm:px-16 sm:py-32 h-full w-full">
+          <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+            <Title color="white" />
+          </div>
+          <div className="flex flex-col gap-4 text-base font-medium w-full">
+            <JoinTheWaitList />
+          </div>
+        </main>
+      </div>
+
+      {/* Feature Section */}
+      <section className="bg-white min-h-screen w-full flex items-center justify-center">
+        <div className="container mx-auto px-6 py-12 sm:px-16 sm:py-24 flex flex-col gap-16">
+          <FeatureCard />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium w-full">
-          <JoinTheWaitList />
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-white/20 px-5 text-white transition-colors hover:border-white/40 hover:bg-white/10 md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t("notInterested")}
-          </a>
+      </section>
+
+      {/* Email Signup Section */}
+      <section
+        id="email-signup"
+        className="bg-white min-h-screen w-full flex items-center justify-center"
+      >
+        <div className="container mx-auto px-6 py-12 sm:px-16 sm:py-24 max-w-2xl">
+          <EmailSignup attribution={attribution} />
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Cards Section */}
+      <section className="bg-white min-h-screen w-full">
+        <div className="container mx-auto px-6 py-12 sm:px-16 sm:py-24">
+          {/* Add your cards here */}
+        </div>
+      </section>
+    </>
   );
 }

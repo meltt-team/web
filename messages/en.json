@@ -1,9 +1,32 @@
 {
   "landing": {
-    "title": "Emms Landing Page",
+    "title": "Change the way you ",
+    "title2": "date",
+    "titleLine1": "Change",
+    "titleLine2": "the way",
+    "titleLine3": "you",
+    "titleLine4": "date",
     "description": "Something is coming...",
     "joinTheWaitList": "Join wait list",
-    "notInterested": "Not interested"
+    "notInterested": "Not interested",
+    "joinTitle": "Be the first to know",
+    "joinDescription": "Enter your email to join the waitlist and get early access.",
+    "emailPlaceholder": "Enter your email",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "joinButton": "Join",
+    "joining": "Joining...",
+    "thankYou": "Thank you!",
+    "checkYourEmail": "We'll be in touch soon.",
+    "joinSuccess": "You're in! Check your email.",
+    "joinError": "Something went wrong. Please try again.",
+    "featureTitle": "Experience dating differently",
+    "featureDescription": "Discover a new way to connect with people that feels authentic and meaningful. Our platform is designed to help you build genuine connections.",
+    "featureImageAlt": "Feature image"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "description": "We'd love to hear from you. Share your thoughts and help us improve."
   },
   "logo": {
     "alt": "Next.js logo"

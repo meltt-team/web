@@ -1,9 +1,32 @@
 {
   "landing": {
-    "title": "Emms Landing Page",
+    "title": "Cambia la forma en que ",
+    "title2": "conoces gente",
+    "titleLine1": "Cambia",
+    "titleLine2": "la forma en que",
+    "titleLine3": "tú",
+    "titleLine4": "conoces gente",
     "description": "Algo está llegando...",
     "joinTheWaitList": "Lista de espera",
-    "notInterested": "No me interesa"
+    "notInterested": "No me interesa",
+    "joinTitle": "Sé el primero en saberlo",
+    "joinDescription": "Ingresa tu correo para unirte a la lista de espera y obtener acceso anticipado.",
+    "emailPlaceholder": "Ingresa tu correo",
+    "emailRequired": "El correo es requerido",
+    "emailInvalid": "Por favor ingresa un correo válido",
+    "joinButton": "Unirse",
+    "joining": "Uniéndose...",
+    "thankYou": "¡Gracias!",
+    "checkYourEmail": "Estaremos en contacto pronto.",
+    "joinSuccess": "¡Estás dentro! Revisa tu correo.",
+    "joinError": "Algo salió mal. Por favor intenta de nuevo.",
+    "featureTitle": "Experimenta las citas de manera diferente",
+    "featureDescription": "Descubre una nueva forma de conectar con personas que se siente auténtica y significativa. Nuestra plataforma está diseñada para ayudarte a construir conexiones genuinas.",
+    "featureImageAlt": "Imagen de característica"
+  },
+  "feedback": {
+    "title": "Comentarios",
+    "description": "Nos encantaría saber de ti. Comparte tus pensamientos y ayúdanos a mejorar."
   },
   "logo": {
     "alt": "Logo de Next.js"

@@ -1,9 +1,32 @@
 {
   "landing": {
-    "title": "Emms Landing Page",
+    "title": "Ändere die Art, wie du ",
+    "title2": "datest",
+    "titleLine1": "Ändere",
+    "titleLine2": "die Art, wie du",
+    "titleLine3": "",
+    "titleLine4": "datest",
     "description": "Etwas kommt...",
     "joinTheWaitList": "Wartenliste",
-    "notInterested": "Nicht interessiert"
+    "notInterested": "Nicht interessiert",
+    "joinTitle": "Seien Sie der Erste, der es erfährt",
+    "joinDescription": "Geben Sie Ihre E-Mail ein, um sich auf die Warteliste zu setzen und frühzeitigen Zugang zu erhalten.",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+    "emailRequired": "E-Mail ist erforderlich",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "joinButton": "Beitreten",
+    "joining": "Beitreten...",
+    "thankYou": "Danke!",
+    "checkYourEmail": "Wir werden uns bald bei Ihnen melden.",
+    "joinSuccess": "Sie sind dabei! Überprüfen Sie Ihre E-Mail.",
+    "joinError": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+    "featureTitle": "Erleben Sie Dating anders",
+    "featureDescription": "Entdecken Sie eine neue Art, sich mit Menschen zu verbinden, die sich authentisch und bedeutungsvoll anfühlt. Unsere Plattform ist darauf ausgelegt, Ihnen zu helfen, echte Verbindungen aufzubauen.",
+    "featureImageAlt": "Feature-Bild"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "description": "Wir würden uns freuen, von Ihnen zu hören. Teilen Sie uns Ihre Gedanken mit und helfen Sie uns, uns zu verbessern."
   },
   "logo": {
     "alt": "Next.js logo"
