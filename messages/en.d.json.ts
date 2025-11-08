@@ -36,6 +36,10 @@ declare const messages: {
   },
   "vercel": {
     "logoAlt": "Vercel logomark"
+  },
+  "metadata": {
+    "title": "Mellt | Right place. Right time.",
+    "description": "Right place. Right time."
   }
 };
 export default messages;

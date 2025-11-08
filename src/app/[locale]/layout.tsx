@@ -11,6 +11,7 @@ import {
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Header from "@/components/molecules/Header";
+import PlausibleProvider from "next-plausible";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -31,11 +32,12 @@ export async function generateMetadata(
 
   const t = await getTranslations({
     locale: locale as Locale,
-    namespace: "landing",
+    namespace: "metadata",
   });
 
   return {
     title: t("title"),
+    description: t("description"),
   };
 }
 
@@ -58,8 +60,10 @@ export default async function LocaleLayout({
         className={`${inter.variable} ${vollkorn.variable} bg-[#333333]! antialiased`}
       >
         <NextIntlClientProvider>
-          <Header />
-          {children}
+          <PlausibleProvider domain="meltt.app">
+            <Header />
+            {children}
+          </PlausibleProvider>
         </NextIntlClientProvider>
       </body>
     </html>

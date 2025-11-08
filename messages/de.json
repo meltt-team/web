@@ -33,6 +33,10 @@
   },
   "vercel": {
     "logoAlt": "Vercel logomark"
+  },
+  "metadata": {
+    "title": "Mell | Richtige Ort. Richtige Zeitpunkt.",
+    "description": "Richtige Ort. Richtige Zeitpunkt."
   }
 }
 

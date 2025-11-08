@@ -33,6 +33,10 @@
   },
   "vercel": {
     "logoAlt": "Marca de Vercel"
+  },
+  "metadata": {
+    "title": "Mellt | El lugar correcto. El momento correcto.",
+    "description": "El lugar correcto. El momento correcto."
   }
 }
 
