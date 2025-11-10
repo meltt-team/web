@@ -1,42 +1,31 @@
 {
   "landing": {
-    "title": "Ändere die Art, wie du ",
-    "title2": "datest",
-    "titleLine1": "Ändere",
-    "titleLine2": "die Art, wie du",
-    "titleLine3": "",
-    "titleLine4": "datest",
-    "description": "Etwas kommt...",
-    "joinTheWaitList": "Wartenliste",
-    "notInterested": "Nicht interessiert",
-    "joinTitle": "Seien Sie der Erste, der es erfährt",
-    "joinDescription": "Geben Sie Ihre E-Mail ein, um sich auf die Warteliste zu setzen und frühzeitigen Zugang zu erhalten.",
+    "titleLine1": "Richtige Zeit.",
+    "titleLine2": "Richtiger ",
+    "titleLine3": "Ort.",
+    "description": "Verbinde dich mit Menschen am gleichen Ort, genau jetzt.",
+    "joinTheWaitList": "Warteliste",
+    "joinTitle": "Wir starten bald in Barcelona, verpassen Sie es nicht.",
     "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
-    "emailRequired": "E-Mail ist erforderlich",
-    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
     "joinButton": "Beitreten",
     "joining": "Beitreten...",
-    "thankYou": "Danke!",
-    "checkYourEmail": "Wir werden uns bald bei Ihnen melden.",
     "joinSuccess": "Sie sind dabei! Überprüfen Sie Ihre E-Mail.",
     "joinError": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
     "featureTitle": "Erleben Sie Dating anders",
     "featureDescription": "Entdecken Sie eine neue Art, sich mit Menschen zu verbinden, die sich authentisch und bedeutungsvoll anfühlt. Unsere Plattform ist darauf ausgelegt, Ihnen zu helfen, echte Verbindungen aufzubauen.",
     "featureImageAlt": "Feature-Bild"
   },
-  "feedback": {
-    "title": "Feedback",
-    "description": "Wir würden uns freuen, von Ihnen zu hören. Teilen Sie uns Ihre Gedanken mit und helfen Sie uns, uns zu verbessern."
-  },
-  "logo": {
-    "alt": "Next.js logo"
-  },
-  "vercel": {
-    "logoAlt": "Vercel logomark"
+  "howItWorks": {
+    "title": "So funktioniert es",
+    "step1Title": "Treffe Menschen im Moment",
+    "step1Description": "Öffne meltt in deiner Lieblingsbar, deinem Club oder deiner Veranstaltung und sieh, wer sonst noch hier ist.",
+    "step2Title": "Mach deinen Zug",
+    "step2Description": "Sende ein kleines Signal an jemanden, mit dem du dich verbunden fühlst. Wenn sie es auch spüren, schalten Sie den Chat frei.",
+    "step3Title": "Von der App ins echte Leben",
+    "step3Description": "Sobald ihr euch verbunden habt, nehmt es offline. Holt euch einen Kaffee, trefft euch an der Bar, ... Denn Chemie passiert, wenn man sich von Angesicht zu Angesicht gegenübersteht"
   },
   "metadata": {
-    "title": "Mell | Richtige Ort. Richtige Zeitpunkt.",
-    "description": "Richtige Ort. Richtige Zeitpunkt."
+    "title": "Mellt | Richtiger Ort. Richtige Zeit.",
+    "description": "Richtiger Ort. Richtige Zeit."
   }
 }
-

@@ -1,42 +1,31 @@
 {
   "landing": {
-    "title": "Cambia la forma en que ",
-    "title2": "conoces gente",
-    "titleLine1": "Cambia",
-    "titleLine2": "la forma en que",
-    "titleLine3": "tú",
-    "titleLine4": "conoces gente",
-    "description": "Algo está llegando...",
+    "titleLine1": "Momento correcto.",
+    "titleLine2": "Lugar ",
+    "titleLine3": "correcto.",
+    "description": "Conecta con personas en el mismo lugar ahora mismo.",
     "joinTheWaitList": "Lista de espera",
-    "notInterested": "No me interesa",
-    "joinTitle": "Sé el primero en saberlo",
-    "joinDescription": "Ingresa tu correo para unirte a la lista de espera y obtener acceso anticipado.",
+    "joinTitle": "Lanzamos pronto en Barcelona, no te lo pierdas.",
     "emailPlaceholder": "Ingresa tu correo",
-    "emailRequired": "El correo es requerido",
-    "emailInvalid": "Por favor ingresa un correo válido",
     "joinButton": "Unirse",
     "joining": "Uniéndose...",
-    "thankYou": "¡Gracias!",
-    "checkYourEmail": "Estaremos en contacto pronto.",
     "joinSuccess": "¡Estás dentro! Revisa tu correo.",
     "joinError": "Algo salió mal. Por favor intenta de nuevo.",
     "featureTitle": "Experimenta las citas de manera diferente",
     "featureDescription": "Descubre una nueva forma de conectar con personas que se siente auténtica y significativa. Nuestra plataforma está diseñada para ayudarte a construir conexiones genuinas.",
     "featureImageAlt": "Imagen de característica"
   },
-  "feedback": {
-    "title": "Comentarios",
-    "description": "Nos encantaría saber de ti. Comparte tus pensamientos y ayúdanos a mejorar."
-  },
-  "logo": {
-    "alt": "Logo de Next.js"
-  },
-  "vercel": {
-    "logoAlt": "Marca de Vercel"
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "step1Title": "Conoce gente en el momento",
+    "step1Description": "Abre meltt en tu bar, club o evento favorito y mira quién más está aquí.",
+    "step2Title": "Haz tu movimiento",
+    "step2Description": "Envía un pequeño ping a alguien con quien conectes. Si ellos también lo sienten, desbloquean el chat.",
+    "step3Title": "De la app a la vida real",
+    "step3Description": "Una vez que conecten, llévenlo fuera de línea. Tomen un café, encuentrense en el bar, ... Porque la química sucede cuando están cara a cara"
   },
   "metadata": {
-    "title": "Mellt | El lugar correcto. El momento correcto.",
-    "description": "El lugar correcto. El momento correcto."
+    "title": "Mellt | Lugar correcto. Momento correcto.",
+    "description": "Lugar correcto. Momento correcto."
   }
 }
-

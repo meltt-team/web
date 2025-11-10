@@ -46,15 +46,32 @@ export default function JoinForm({ attribution }: JoinFormProps) {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         disabled={state === 'loading' || state === 'done'}
+        icon={
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 8H13M13 8L9 4M13 8L9 12"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        }
       />
       <Button type="submit" disabled={state === 'loading' || state === 'done'}>
         {state === 'loading' ? t('joining') : t('joinButton')}
       </Button>
       {state === 'done' && (
-        <p className="text-green-600 text-sm">{t('joinSuccess')}</p>
+        <p className="text-success text-sm">{t('joinSuccess')}</p>
       )}
       {state === 'error' && (
-        <p className="text-red-600 text-sm">{t('joinError')}</p>
+        <p className="text-error text-sm">{t('joinError')}</p>
       )}
     </form>
   );

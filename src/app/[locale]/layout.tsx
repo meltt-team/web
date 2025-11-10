@@ -11,12 +11,13 @@ import {
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Header from "@/components/molecules/Header";
+import Footer from "@/components/molecules/Footer";
 import PlausibleProvider from "next-plausible";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 const vollkorn = Vollkorn({
-  weight: "500",
+  weight: ["500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-vollkorn",
 });
@@ -63,6 +64,7 @@ export default async function LocaleLayout({
           <PlausibleProvider domain="meltt.app">
             <Header />
             {children}
+            <Footer />
           </PlausibleProvider>
         </NextIntlClientProvider>
       </body>

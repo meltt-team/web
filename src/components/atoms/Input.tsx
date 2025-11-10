@@ -1,22 +1,32 @@
 "use client";
 
 // React-related imports
-import { InputHTMLAttributes } from "react";
+import { InputHTMLAttributes, ReactNode } from "react";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: string;
+  icon?: ReactNode;
 }
 
-function Input({ error, className = "", ...props }: InputProps) {
+function Input({ error, icon, className = "", ...props }: InputProps) {
   return (
     <div className="w-full">
-      <input
-        className={`w-full bg-transparent border-0 border-b-2 ${
-          error ? "border-red-500" : "border-black"
-        } text-black text-lg px-2 py-3 outline-none focus:border-black/60 transition-colors placeholder:text-black/40 ${className}`}
-        {...props}
-      />
-      {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
+      <div className="relative w-full">
+        <input
+          className={`w-full bg-transparent border ${
+            error ? "border-error" : "border-input"
+          } rounded-full text-foreground text-lg px-4 py-3 ${
+            icon ? "pr-12" : ""
+          } outline-none focus:border-primary/60 transition-colors placeholder:text-muted-foreground ${className}`}
+          {...props}
+        />
+        {icon && (
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full flex items-center justify-center bg-muted/50">
+            {icon}
+          </div>
+        )}
+      </div>
+      {error && <p className="mt-2 text-sm text-error">{error}</p>}
     </div>
   );
 }

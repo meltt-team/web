@@ -18,7 +18,7 @@ function JoinTheWaitList() {
 
   return (
     <div className="flex w-full">
-      <Button onClick={handleJoinTheWaitList}>{t("joinTheWaitList")}</Button>
+      <Button variant="primary" onClick={handleJoinTheWaitList}>{t("joinTheWaitList")}</Button>
     </div>
   );
 }

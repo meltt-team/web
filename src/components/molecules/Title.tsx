@@ -15,9 +15,8 @@ function Title({ color = "black" }: TitleProps) {
     <h1 className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-vollkorn leading-tight ${textColor} text-left`}>
       {t("titleLine1")}
       <br />
-      {t("titleLine2")}
+      {t("titleLine2")}<span className="italic font-bold">{t("titleLine3")}</span>
       <br />
-      {t("titleLine3")} <span className="italic font-bold">{t("titleLine4")}</span>
     </h1>
   );
 }
