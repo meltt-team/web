@@ -3,9 +3,9 @@
     "titleLine1": "Right time.",
     "titleLine2": "Right ",
     "titleLine3": "place.",
-    "description": "Connect with people in the same place right now.",
-    "joinTheWaitList": "Join wait list",
-    "joinTitle": "We are launching soon in Barcelona, don't miss it.",
+    "description": "Meet people in the same bar, club, or event — we’ll handle the hello.",
+    "joinTheWaitList": "Get early access",
+    "joinTitle": "We're launching soon in Barcelona. Don't miss it.",
     "emailPlaceholder": "Enter your email",
     "joinButton": "Join",
     "joining": "Joining...",
@@ -23,6 +23,11 @@
     "step2Description": "Send a small ping to someone you vibe with. If they feel it too, you unlock the chat.",
     "step3Title": "From app to real life",
     "step3Description": "Once you connect, take it offline. Grab a coffe, meet at the bar, ... Because chemistry happens when you're face to face"
+  },
+  "facts": {
+    "fact1": "✔️ No staring contests across the bar",
+    "fact2": "✔️ No guessing games",
+    "fact3": "✔️ Just real people, connecting"
   },
   "metadata": {
     "title": "Mellt | Right place. Right time.",

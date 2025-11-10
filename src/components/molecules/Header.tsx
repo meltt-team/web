@@ -12,7 +12,7 @@ function Header() {
       const currentScrollY = window.scrollY;
 
       // Change logo color after scrolling 10px
-      if (currentScrollY > 10) {
+      if (currentScrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);

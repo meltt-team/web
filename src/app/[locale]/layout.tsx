@@ -58,7 +58,7 @@ export default async function LocaleLayout({
   return (
     <html className="h-full" lang={locale}>
       <body
-        className={`${inter.variable} ${vollkorn.variable} bg-[#333333]! antialiased`}
+        className={`${inter.variable} ${vollkorn.variable} antialiased`}
       >
         <NextIntlClientProvider>
           <PlausibleProvider domain="meltt.app">

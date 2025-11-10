@@ -5,6 +5,9 @@
   /* Brand Colors */
   --brand: #FE5C7C;
   --brand-foreground: #ffffff;
+  --brand-light: #FAC2EA;
+
+  --gray: #797272;
   
   /* Background & Foreground */
   --background: #ffffff;
@@ -51,6 +54,8 @@
   --color-foreground: var(--foreground);
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);
+  --color-brand-light: var(--brand-light);
+  --color-gray: var(--gray);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
@@ -103,4 +108,74 @@ body {
   background: var(--background);
   color: var(--primary);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+/* Responsive Hero Background */
+.hero-background {
+  background-image: url('/phone-image.png');
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Tablet breakpoint (640px and up) */
+@media (min-width: 640px) {
+  .hero-background {
+    background-image: url('/tablet-image.png');
+  }
+}
+
+/* Desktop breakpoint (1024px and up) */
+@media (min-width: 1024px) {
+  .hero-background {
+    background-image: url('/desktop-image.png');
+  }
+}
+
+/* Responsive Vector Images */
+.phone-vector {
+  display: block;
+}
+
+.tablet-vector {
+  display: none;
+}
+
+.desktop-vector {
+  display: none;
+}
+
+/* Tablet breakpoint (640px and up) */
+@media (min-width: 640px) {
+  .phone-vector {
+    display: none;
+  }
+  
+  .tablet-vector {
+    display: block;
+  }
+  
+  .desktop-vector {
+    display: none;
+  }
+}
+
+/* Desktop breakpoint (1024px and up) */
+@media (min-width: 1024px) {
+  .phone-vector {
+    display: none;
+  }
+  
+  .tablet-vector {
+    display: none;
+  }
+  
+  .desktop-vector {
+    display: block;
+  }
 }

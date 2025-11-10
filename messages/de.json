@@ -24,6 +24,11 @@
     "step3Title": "Von der App ins echte Leben",
     "step3Description": "Sobald ihr euch verbunden habt, nehmt es offline. Holt euch einen Kaffee, trefft euch an der Bar, ... Denn Chemie passiert, wenn man sich von Angesicht zu Angesicht gegenübersteht"
   },
+  "facts": {
+    "fact1": "✔️ Keine Starrwettbewerbe über die Bar hinweg",
+    "fact2": "✔️ Keine Ratespiele",
+    "fact3": "✔️ Nur echte Menschen, die sich verbinden"
+  },
   "metadata": {
     "title": "Mellt | Richtiger Ort. Richtige Zeit.",
     "description": "Richtiger Ort. Richtige Zeit."

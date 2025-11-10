@@ -18,7 +18,7 @@ function EmailSignup({ attribution }: { attribution: Record<string, string | und
 
   return (
     <div className="flex flex-col items-center gap-8 text-center">
-      <h2 className="text-2xl font-vollkorn text-black">
+      <h2 className="text-3xl font-vollkorn text-black">
         {t("joinTitle")}
       </h2>
       <div className="w-full max-w-md">

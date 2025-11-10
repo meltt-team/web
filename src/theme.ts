@@ -16,6 +16,7 @@ export const theme = {
     brand: {
       DEFAULT: 'var(--brand)',
       foreground: 'var(--brand-foreground)',
+      light: 'var(--brand-light)',
     },
     
     // Primary
@@ -105,6 +106,7 @@ export const themeClasses = {
     error: 'bg-error',
     warning: 'bg-warning',
     info: 'bg-info',
+    brandLight: 'bg-brand-light',
   },
   
   // Text

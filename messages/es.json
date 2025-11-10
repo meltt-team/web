@@ -24,6 +24,11 @@
     "step3Title": "De la app a la vida real",
     "step3Description": "Una vez que conecten, llévenlo fuera de línea. Tomen un café, encuentrense en el bar, ... Porque la química sucede cuando están cara a cara"
   },
+  "facts": {
+    "fact1": "✔️ Sin concursos de miradas por el bar",
+    "fact2": "✔️ Sin juegos de adivinanzas",
+    "fact3": "✔️ Solo personas reales, conectando"
+  },
   "metadata": {
     "title": "Mellt | Lugar correcto. Momento correcto.",
     "description": "Lugar correcto. Momento correcto."

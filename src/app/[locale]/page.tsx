@@ -7,11 +7,14 @@ import Image from "next/image";
 import Button from "@/components/atoms/Button";
 import JoinTheWaitList from "@/components/molecules/JoinTheWaitList";
 import EmailSignup from "@/components/molecules/EmailSignup";
-import FeatureCard from "@/components/molecules/FeatureCard";
 import Title from "@/components/molecules/Title";
 import { getAttributionFromURL } from "@/utils/getAttribution";
 import Flare from "@/components/atoms/Flare";
 import HowItWorks from "@/components/templates/HowItWorks";
+import Conversation from "@/components/templates/Conversation";
+import Deck from "@/components/templates/Deck";
+import Facts from "@/components/templates/Facts";
+import Story from "@/components/templates/Story";
 
 export default async function IndexPage({
   params,
@@ -35,54 +38,88 @@ export default async function IndexPage({
 
   return (
     <main>
-      {/* Hero Section */}
-      <section className="relative flex items-center justify-center font-sans overflow-hidden h-screen w-full bg-background">
-        {/* Flare Overlay */}
-        <div className="absolute inset-0">
-          <Flare />
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col max-w-3xl w-full h-full">
-          {/* Hero Image - Natural height */}
-          <div className="w-full">
-            <Image
-              src="/landing_mobile_v2.png"
-              alt="Landing page hero"
-              width={1200}
-              height={800}
-              className="w-full h-auto"
-              priority
-              quality={100}
-            />
-          </div>
-
-          {/* Content - Fills remaining space */}
-          <div className="flex-1 flex flex-col justify-end px-6 pb-10 gap-6">
-            <div className="flex flex-col gap-4 text-left">
-              <Title />
-              <p className="text-base font-medium">{t("description")}</p>
+      {/* Hero Section with Fixed Background */}
+      <section className="relative w-full">
+        {/* Fixed Background Image */}
+        <div className="w-full relative hero-background">
+          {/* Hero Content */}
+          <div className="relative z-10 flex flex-col items-center">
+            {/* Responsive Vectors - Full screen width */}
+            <div className="w-screen translate-y-[2px]">
+              <img
+                src="/phone-vector.svg"
+                alt="Logo"
+                className="w-full h-auto phone-vector"
+              />
+              <img
+                src="/tablet-vector.svg"
+                alt="Logo"
+                className="w-full h-auto tablet-vector"
+              />
+              <img
+                src="/desktop-vector.svg"
+                alt="Logo"
+                className="w-full h-auto desktop-vector"
+              />
             </div>
 
-            {/* CTA */}
-            <div className="flex flex-col gap-4 text-base font-medium w-full">
-              <JoinTheWaitList />
+            {/* Content below */}
+            <div className="w-full bg-white">
+              <div className="max-w-3xl mx-auto flex flex-col px-6 pb-10 gap-6">
+                <div className="flex flex-col gap-4 text-left">
+                  <Title />
+                  <p className="text-base text-gray">{t("description")}</p>
+                </div>
+
+                {/* CTA */}
+                <div className="flex flex-col gap-4 text-base font-medium w-full">
+                  <JoinTheWaitList />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Story Section */}
+      <section className="bg-white w-full flex items-center justify-center">
+        <div className="container mx-auto px-6 pt-12 sm:px-16 sm:py-24 flex flex-col gap-16">
+          <Story />
+        </div>
+      </section>
+
+      {/* Facts Section */}
+      <section className="bg-white w-full flex items-center justify-center">
+        <div className="container mx-auto px-6 sm:px-16 sm:py-24 flex flex-col gap-16">
+          <Facts />
+        </div>
+      </section>
+
+      {/* Deck Section */}
+      <section className="bg-white w-full flex items-center justify-center">
+        <div className="container mx-auto px-6 py-12 sm:px-16 sm:py-24 flex flex-col gap-16">
+          <Deck />
+        </div>
+      </section>
+
       {/* Feature Section */}
-      <section className="bg-white min-h-screen w-full flex items-center justify-center">
+      <section className="bg-white w-full flex items-center justify-center">
         <div className="container mx-auto px-6 py-12 sm:px-16 sm:py-24 flex flex-col gap-16">
           <HowItWorks />
+        </div>
+      </section>
+
+      {/* Conversation Section */}
+      <section className="bg-white w-full flex items-center justify-center">
+        <div className="container mx-auto px-6 py-12 sm:px-16 sm:py-24 flex flex-col gap-16">
+          <Conversation />
         </div>
       </section>
 
       {/* Email Signup Section */}
       <section
         id="email-signup"
-        className="bg-white min-h-screen w-full flex items-center justify-center"
+        className="bg-white w-full flex items-center justify-center pb-16"
       >
         <div className="container mx-auto px-6 py-12 sm:px-16 sm:py-24 max-w-2xl">
           <EmailSignup attribution={attribution} />
