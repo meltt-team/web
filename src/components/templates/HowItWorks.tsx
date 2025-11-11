@@ -43,7 +43,7 @@ function HowItWorks() {
 
               {/* Content */}
               <div className="flex-1 pt-1">
-                <h3 className="text-md sm:text-3xl font-vollkorn text-primary mb-1">
+                <h3 className="text-md sm:text-3xl font-inter font-bold text-primary mb-1">
                   {step.title}
                 </h3>
                 <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed">

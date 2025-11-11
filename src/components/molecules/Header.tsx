@@ -4,6 +4,9 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+// Application utilities and constants
+import { Link } from "@/i18n/navigation";
+
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -26,7 +29,7 @@ function Header() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 bg-transparent transition-all duration-300">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <div className="flex items-center">
+        <Link href="/" className="flex items-center cursor-pointer">
           <Image
             src="/logo.svg"
             alt="Logo"
@@ -37,7 +40,7 @@ function Header() {
               isScrolled ? "" : "invert"
             }`}
           />
-        </div>
+        </Link>
       </div>
     </header>
   );

@@ -5,9 +5,10 @@
     "titleLine3": "place.",
     "description": "Meet people in the same bar, club, or event — we’ll handle the hello.",
     "joinTheWaitList": "Get early access",
-    "joinTitle": "We're launching soon in Barcelona. Don't miss it.",
+    "joinTitle": "Launch night in Barcelona is coming",
+    "joinSubtitle": "Join the waitlist for early access and the special launch nights.",
     "emailPlaceholder": "Enter your email",
-    "joinButton": "Join",
+    "joinButton": "Get early access",
     "joining": "Joining...",
     "joinSuccess": "You're in! Check your email.",
     "joinError": "Something went wrong. Please try again.",
@@ -17,12 +18,12 @@
   },
   "howItWorks": {
     "title": "How it works",
-    "step1Title": "Meet people in the moment",
-    "step1Description": "Open meltt at your favorite bar, club, or event and see who else is here.",
+    "step1Title": "Open Meltt",
+    "step1Description": "You’re at a bar, festival, club. You open the app and see who else is here.",
     "step2Title": "Make your move",
-    "step2Description": "Send a small ping to someone you vibe with. If they feel it too, you unlock the chat.",
-    "step3Title": "From app to real life",
-    "step3Description": "Once you connect, take it offline. Grab a coffe, meet at the bar, ... Because chemistry happens when you're face to face"
+    "step2Description": "Someone catches your eye. You ping them — if they ping back, it’s a match.",
+    "step3Title": "Meet for real",
+    "step3Description": "Once you connect, take it offline. You chat, grab a drink, maybe more — the kind that doesn’t start with a swipe."
   },
   "facts": {
     "fact1": "✔️ No staring contests across the bar",

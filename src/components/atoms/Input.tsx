@@ -14,7 +14,7 @@ function Input({ error, icon, className = "", ...props }: InputProps) {
       <div className="relative w-full">
         <input
           className={`w-full bg-transparent border ${
-            error ? "border-error" : "border-input"
+            error ? "border-error" : "border-border"
           } rounded-full text-foreground text-lg px-4 py-3 ${
             icon ? "pr-12" : ""
           } outline-none focus:border-primary/60 transition-colors placeholder:text-muted-foreground ${className}`}
