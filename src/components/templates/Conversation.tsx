@@ -3,14 +3,15 @@
 // External modules and React-related imports
 import Image from "next/image";
 
-function Conversation() {
+function Conversation({ language }: { language: string }) {
+  const imagePath = language === "es" ? "/chat_es.png" : "/chat_en.png";
   return (
     <div className="relative w-full max-w-sm mx-auto py-12 px-4">
       {/* Right Profile Card */}
       <div className="relative">
         <div className="relative flex justify-center items-center">
           <Image
-            src="/chat-final.png"
+            src={imagePath}
             alt="Profile 2"
             className="object-cover"
             width={0}
