@@ -1,6 +1,22 @@
 import Script from 'next/script'; 
 
-function SuccessPage() {
+async function SuccessPage({
+  params,
+}: PageProps<"/[locale]"> & {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+
+  if (locale === "es") {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <Script src="https://embed.typeform.com/next/embed.js" />
+        <div data-tf-live="01K9T3YEDZDSRWCQTS99K5BK9Y"></div>
+      </div>
+    );
+  }
+
   return (
     <div className="h-screen flex items-center justify-center">
       <Script src="https://embed.typeform.com/next/embed.js" />
