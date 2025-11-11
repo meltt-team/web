@@ -1,36 +1,49 @@
 {
   "landing": {
-    "titleLine1": "Richtige Zeit.",
-    "titleLine2": "Richtiger ",
-    "titleLine3": "Ort.",
-    "description": "Verbinde dich mit Menschen am gleichen Ort, genau jetzt.",
-    "joinTheWaitList": "Warteliste",
-    "joinTitle": "Wir starten bald in Barcelona, verpassen Sie es nicht.",
-    "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
-    "joinButton": "Beitreten",
-    "joining": "Beitreten...",
-    "joinSuccess": "Sie sind dabei! Überprüfen Sie Ihre E-Mail.",
-    "joinError": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
-    "featureTitle": "Erleben Sie Dating anders",
-    "featureDescription": "Entdecken Sie eine neue Art, sich mit Menschen zu verbinden, die sich authentisch und bedeutungsvoll anfühlt. Unsere Plattform ist darauf ausgelegt, Ihnen zu helfen, echte Verbindungen aufzubauen.",
-    "featureImageAlt": "Feature-Bild"
+    "titleLine1": "Der richtige Moment.",
+    "titleLine2": "Der richtige <bold>Ort.</bold>",
+    "description": "Triff Leute in derselben Bar, im Club oder auf dem Event – wir übernehmen das erste Hallo.",
+    "joinTheWaitList": "Frühen Zugang erhalten",
+    "joinTitle": "Die Launch-Nacht in Barcelona steht bevor",
+    "joinSubtitle": "Melde dich für die Warteliste an, um frühen Zugang und exklusive Launch-Nächte zu bekommen.",
+    "emailPlaceholder": "Gib deine E-Mail-Adresse ein",
+    "joinButton": "Frühen Zugang erhalten",
+    "joining": "Beitritt läuft...",
+    "joinSuccess": "Du bist dabei! Schau in dein Postfach.",
+    "joinError": "Etwas ist schiefgelaufen. Bitte versuch es nochmal."
   },
   "howItWorks": {
-    "title": "So funktioniert es",
-    "step1Title": "Treffe Menschen im Moment",
-    "step1Description": "Öffne meltt in deiner Lieblingsbar, deinem Club oder deiner Veranstaltung und sieh, wer sonst noch hier ist.",
-    "step2Title": "Mach deinen Zug",
-    "step2Description": "Sende ein kleines Signal an jemanden, mit dem du dich verbunden fühlst. Wenn sie es auch spüren, schalten Sie den Chat frei.",
-    "step3Title": "Von der App ins echte Leben",
-    "step3Description": "Sobald ihr euch verbunden habt, nehmt es offline. Holt euch einen Kaffee, trefft euch an der Bar, ... Denn Chemie passiert, wenn man sich von Angesicht zu Angesicht gegenübersteht"
+    "title": "So funktioniert’s",
+    "step1Title": "Öffne Meltt",
+    "step1Description": "Du bist in einer Bar, auf einem Festival oder im Club. Du öffnest die App und siehst, wer sonst noch da ist.",
+    "step2Title": "Mach den ersten Schritt",
+    "step2Description": "Jemand fällt dir auf. Du schickst ihm einen Ping – wenn du einen zurückbekommst, ist es ein Match.",
+    "step3Title": "Trefft euch im echten Leben",
+    "step3Description": "Sobald ihr verbunden seid, geht’s offline weiter. Ihr schreibt, trinkt etwas zusammen – echte Begegnungen, ganz ohne Swipe."
   },
   "facts": {
-    "fact1": "✔️ Keine Starrwettbewerbe über die Bar hinweg",
+    "fact1": "✔️ Kein Anstarren quer durch die Bar",
     "fact2": "✔️ Keine Ratespiele",
-    "fact3": "✔️ Nur echte Menschen, die sich verbinden"
+    "fact3": "✔️ Nur echte Menschen, die sich wirklich verbinden"
+  },
+  "deck": {
+    "festival": "Festival",
+    "club": "Club",
+    "bar": "Bar",
+    "events": "Events",
+    "profileAlt": "Profil-Rückseite"
+  },
+  "story": {
+    "heartAlt": "Herz",
+    "heading": "Schon mal jemanden in einer Bar gemocht, aber nie angesprochen? Schade, oder?",
+    "subheading": "Wir haben Meltt gebaut, damit dieser Moment nicht verloren geht."
+  },
+  "footer": {
+    "logoAlt": "Meltt Logo",
+    "tagline": "Die Dating-App, die im echten Leben passiert."
   },
   "metadata": {
-    "title": "Mellt | Richtiger Ort. Richtige Zeit.",
-    "description": "Richtiger Ort. Richtige Zeit."
+    "title": "Meltt | Der richtige Ort. Der richtige Moment.",
+    "description": "Der richtige Ort. Der richtige Moment."
   }
 }

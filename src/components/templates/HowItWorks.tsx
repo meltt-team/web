@@ -25,7 +25,7 @@ function HowItWorks() {
   ];
 
   return (
-    <section className="w-full bg-background py-16 sm:py-24">
+    <section className="w-full bg-background pt-16">
       <div className="container mx-auto sm:px-16 max-w-4xl">
         <h2 className="text-4xl sm:text-5xl font-vollkorn text-primary text-center font-semibold mb-8">
           {t("title")}
@@ -43,7 +43,7 @@ function HowItWorks() {
 
               {/* Content */}
               <div className="flex-1 pt-1">
-                <h3 className="text-md sm:text-3xl font-inter font-bold text-primary mb-1">
+                <h3 className="text-md sm:text-xl font-inter font-bold text-primary mb-1">
                   {step.title}
                 </h3>
                 <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed">

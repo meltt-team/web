@@ -1,19 +1,16 @@
 {
   "landing": {
     "titleLine1": "Momento correcto.",
-    "titleLine2": "Lugar ",
-    "titleLine3": "correcto.",
+    "titleLine2": "<bold>Lugar</bold> perfecto.",
     "description": "Conecta con personas en el mismo lugar ahora mismo.",
     "joinTheWaitList": "Lista de espera",
     "joinTitle": "Lanzamos pronto en Barcelona, no te lo pierdas.",
+    "joinSubtitle": "Únete a la lista de espera para acceso anticipado y las noches especiales de lanzamiento.",
     "emailPlaceholder": "Ingresa tu correo",
     "joinButton": "Unirse",
     "joining": "Uniéndose...",
     "joinSuccess": "¡Estás dentro! Revisa tu correo.",
-    "joinError": "Algo salió mal. Por favor intenta de nuevo.",
-    "featureTitle": "Experimenta las citas de manera diferente",
-    "featureDescription": "Descubre una nueva forma de conectar con personas que se siente auténtica y significativa. Nuestra plataforma está diseñada para ayudarte a construir conexiones genuinas.",
-    "featureImageAlt": "Imagen de característica"
+    "joinError": "Algo salió mal. Por favor intenta de nuevo."
   },
   "howItWorks": {
     "title": "Cómo funciona",
@@ -28,6 +25,22 @@
     "fact1": "✔️ Sin concursos de miradas por el bar",
     "fact2": "✔️ Sin juegos de adivinanzas",
     "fact3": "✔️ Solo personas reales, conectando"
+  },
+  "deck": {
+    "festival": "Festival",
+    "club": "Club",
+    "bar": "Bar",
+    "events": "Eventos",
+    "profileAlt": "Perfil atrás"
+  },
+  "story": {
+    "heartAlt": "Corazón",
+    "heading": "¿Alguna vez te gustó alguien en un bar pero nunca hablaste con esa persona? Qué desperdicio, ¿verdad?",
+    "subheading": "Construimos MeItt para que ese momento no se desperdicie."
+  },
+  "footer": {
+    "logoAlt": "Meltt Logo",
+    "tagline": "La app de citas que pasa en la vida real."
   },
   "metadata": {
     "title": "Mellt | Lugar correcto. Momento correcto.",

@@ -1,8 +1,7 @@
 {
   "landing": {
     "titleLine1": "Right time.",
-    "titleLine2": "Right ",
-    "titleLine3": "place.",
+    "titleLine2": "Right <bold>place.</bold>",
     "description": "Meet people in the same bar, club, or event — we’ll handle the hello.",
     "joinTheWaitList": "Get early access",
     "joinTitle": "Launch night in Barcelona is coming",
@@ -11,10 +10,7 @@
     "joinButton": "Get early access",
     "joining": "Joining...",
     "joinSuccess": "You're in! Check your email.",
-    "joinError": "Something went wrong. Please try again.",
-    "featureTitle": "Experience dating differently",
-    "featureDescription": "Discover a new way to connect with people that feels authentic and meaningful. Our platform is designed to help you build genuine connections.",
-    "featureImageAlt": "Feature image"
+    "joinError": "Something went wrong. Please try again."
   },
   "howItWorks": {
     "title": "How it works",
@@ -29,6 +25,22 @@
     "fact1": "✔️ No staring contests across the bar",
     "fact2": "✔️ No guessing games",
     "fact3": "✔️ Just real people, connecting"
+  },
+  "deck": {
+    "festival": "Festival",
+    "club": "Club",
+    "bar": "Bar",
+    "events": "Events",
+    "profileAlt": "Profile back"
+  },
+  "story": {
+    "heartAlt": "Heart",
+    "heading": "Ever liked someone at a bar but never talked to them? What a waste, right?",
+    "subheading": "We built MeItt so that moment doesn't go to waste."
+  },
+  "footer": {
+    "logoAlt": "Meltt Logo",
+    "tagline": "The dating app that happens in real life."
   },
   "metadata": {
     "title": "Mellt | Right place. Right time.",

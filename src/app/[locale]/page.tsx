@@ -97,14 +97,14 @@ export default async function IndexPage({
           {/* PHONE VECTOR IMAGE */}
 
           <div>
-            <div className="max-w-3xl mx-auto flex flex-col px-6 pb-10 gap-6">
+            <div className="max-w-4xl mx-auto flex flex-col px-6 pb-10 gap-6">
               <div className="flex flex-col text-left">
                 <Title />
-                <p className="text-base text-gray">{t("description")}</p>
+                <p className="text-base md:text-lg lg:text-2xl md:text-center text-gray">{t("description")}</p>
               </div>
 
               {/* CTA */}
-              <div className="flex flex-col text-base font-medium w-full">
+              <div className="flex flex-col text-base font-medium w-full items-center">
                 <JoinTheWaitList />
               </div>
             </div>
@@ -114,14 +114,14 @@ export default async function IndexPage({
 
       {/* Story Section */}
       <section className="bg-white w-full flex items-center justify-center">
-        <div className="container mx-auto px-6 pt-12 sm:px-16 sm:py-24 flex flex-col gap-16">
+        <div className="container mx-auto px-6 pt-12 sm:px-16 flex flex-col gap-16">
           <Story />
         </div>
       </section>
 
       {/* Facts Section */}
       <section className="bg-white w-full flex items-center justify-center">
-        <div className="container mx-auto px-6 sm:px-16 flex flex-col gap-16">
+        <div className="container mx-auto px-6 sm:px-16 flex flex-col py-10">
           <Facts />
         </div>
       </section>
@@ -148,11 +148,8 @@ export default async function IndexPage({
       </section>
 
       {/* Email Signup Section */}
-      <section
-        id="email-signup"
-        className="bg-white w-full flex items-center justify-center pb-16"
-      >
-        <div className="container mx-auto px-6 py-12 sm:px-16 sm:py-24 max-w-2xl">
+      <section className="bg-white w-full flex items-center justify-center pb-16">
+        <div className="container mx-auto px-6 max-w-3xl">
           <EmailSignup attribution={attribution} />
         </div>
       </section>

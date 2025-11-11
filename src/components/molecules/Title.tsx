@@ -8,18 +8,23 @@ interface TitleProps {
 }
 
 function Title({ color = "black" }: TitleProps) {
-  const t = useTranslations("landing");
+  const t = useTranslations();
   const textColor = color === "white" ? "text-white" : "text-black";
 
   return (
-    <h1 className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-vollkorn leading-tight ${textColor} text-left`}>
-      {t("titleLine1")}
+    <h1
+      className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-vollkorn leading-tight ${textColor} text-left md:text-center`}
+    >
+      {t.rich("landing.titleLine1", {
+        bold: (chunks) => <strong>{chunks}</strong>,
+      })}
       <br />
-      {t("titleLine2")}<span className="italic font-bold">{t("titleLine3")}</span>
+      {t.rich("landing.titleLine2", {
+        bold: (chunks) => <span className="italic"><strong>{chunks}</strong></span>,
+      })}
       <br />
     </h1>
   );
 }
 
 export default Title;
-

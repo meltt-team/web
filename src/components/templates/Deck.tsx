@@ -2,6 +2,7 @@
 
 // External modules and React-related imports
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const colorMap = {
   pink: "#FAC2EA",
@@ -10,11 +11,13 @@ const colorMap = {
 };
 
 function Deck() {
+  const t = useTranslations("deck");
+
   const interests = [
-    { label: "Festival", color: "yellow" },
-    { label: "Club", color: "white" },
-    { label: "Bar", color: "pink" },
-    { label: "Events", color: "white" },
+    { label: t("festival"), color: "yellow" },
+    { label: t("club"), color: "white" },
+    { label: t("bar"), color: "pink" },
+    { label: t("events"), color: "white" },
   ];
 
   return (
@@ -25,7 +28,7 @@ function Deck() {
         <div className="relative">
           <Image
             src="/couple.png"
-            alt="Profile back"
+            alt={t("profileAlt")}
             width={0}
             height={0}
             sizes="100vw"
@@ -36,41 +39,41 @@ function Deck() {
 
         {/* Interest tags - Left side */}
         <div
-          className={`px-4 py-1 text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[-00px] z-30`}
+          className={`px-4 py-1 text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[-00px] z-30 translate-x-[16px]`}
           style={{
             boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
             backgroundColor: colorMap["yellow"],
           }}
         >
-          <p>Festival</p>
+          <p>{interests[0].label}</p>
         </div>
         <div
-          className={`px-4 py-1 border border-border text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[40px] z-30`}
+          className={`px-4 py-1 border border-border text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[40px] z-30 translate-x-[-16px]`}
           style={{
             boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
             backgroundColor: colorMap["white"],
           }}
         >
-          <p>Club</p>
+          <p>{interests[1].label}</p>
         </div>
 
         <div
-          className={`px-4 py-1 text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[80px] z-30`}
+          className={`px-4 py-1 text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[80px] z-30 translate-x-[16px]`}
           style={{
             boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
             backgroundColor: colorMap["pink"],
           }}
         >
-          <p>Bar</p>
+          <p>{interests[2].label}</p>
         </div>
         <div
-          className={`px-4 py-1 border border-border text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[120px] z-30`}
+          className={`px-4 py-1 border border-border text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[120px] z-30 translate-x-[-16px]`}
           style={{
             boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
             backgroundColor: colorMap["white"],
           }}
         >
-          <p>Events</p>
+          <p>{interests[3].label}</p>
         </div>
       </div>
     </div>

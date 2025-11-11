@@ -32,7 +32,7 @@ function JoinTheWaitList() {
   };
 
   return (
-    <div className="flex w-full">
+    <div className="flex w-full md:w-[400px]">
       <Button variant="primary" onClick={handleJoinTheWaitList}>
         {t("joinTheWaitList")}
       </Button>

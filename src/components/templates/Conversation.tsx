@@ -5,12 +5,12 @@ import Image from "next/image";
 
 function Conversation() {
   return (
-    <div className="relative w-full max-w-4xl mx-auto py-12 px-4">
+    <div className="relative w-full max-w-sm mx-auto py-12 px-4">
       {/* Right Profile Card */}
       <div className="relative">
         <div className="relative flex justify-center items-center">
           <Image
-            src="/chat.png"
+            src="/chat-final.png"
             alt="Profile 2"
             className="object-cover"
             width={0}
