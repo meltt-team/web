@@ -20,7 +20,7 @@ function Title({ color = "black" }: TitleProps) {
       })}
       <br />
       {t.rich("landing.titleLine2", {
-        bold: (chunks) => <span className="italic"><strong>{chunks}</strong></span>,
+        bold: (chunks) => <span className="italic">{chunks}</span>,
       })}
       <br />
     </h1>

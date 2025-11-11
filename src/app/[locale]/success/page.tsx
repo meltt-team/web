@@ -7,6 +7,7 @@ async function SuccessPage({
 }) {
   const resolvedParams = await params;
   const { locale } = resolvedParams;
+  console.log('success locale:', locale);
 
   if (locale === "es") {
     return (

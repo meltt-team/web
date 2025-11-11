@@ -1,28 +1,28 @@
 {
   "landing": {
-    "titleLine1": "Momento correcto.",
-    "titleLine2": "<bold>Lugar</bold> perfecto.",
+    "titleLine1": "Momento ideal.",
+    "titleLine2": "<bold>Lugar</bold> ideal.",
     "description": "Conecta con personas en el mismo lugar ahora mismo.",
     "joinTheWaitList": "Obtén acceso exclusivo",
     "joinTitle": "Lanzamos pronto en Barcelona, no te lo pierdas.",
     "joinSubtitle": "Únete a la lista de espera para acceso anticipado y las noches especiales de lanzamiento.",
     "emailPlaceholder": "Ingresa tu correo",
     "joinButton": "Obtén acceso exclusivo",
-    "joining": "Uniéndose...",
+    "joining": "Cargando...",
     "joinSuccess": "¡Estás dentro! Revisa tu correo.",
     "joinError": "Algo salió mal. Por favor intenta de nuevo."
   },
   "howItWorks": {
     "title": "Cómo funciona",
-    "step1Title": "Conoce gente en el momento",
-    "step1Description": "Abre meltt en tu bar, club o evento favorito y mira quién más está aquí.",
-    "step2Title": "Haz tu movimiento",
-    "step2Description": "Envía un pequeño ping a alguien con quien conectes. Si ellos también lo sienten, desbloquean el chat.",
-    "step3Title": "De la app a la vida real",
-    "step3Description": "Una vez que conecten, llévenlo fuera de línea. Tomen un café, encuentrense en el bar, ... Porque la química sucede cuando están cara a cara"
+    "step1Title": "Abre Meltt",
+    "step1Description": "Estás en un bar, festival o club. Abres la app y ves quién más está aquí.",
+    "step2Title": "Da el primer paso",
+    "step2Description": "Alguien te llama la atención. Le mandas un ping — si te responde, hay match.",
+    "step3Title": "Conózcanse en persona",
+    "step3Description": "Una vez que hacen conexión, llévenlo al mundo real. Chatean, toman algo, o tal vez más — una historia que no empieza con un swipe."
   },
   "facts": {
-    "fact1": "✔️ Sin concursos de miradas por el bar",
+    "fact1": "✔️ Sin juegos de miradas en el bar",
     "fact2": "✔️ Sin juegos de adivinanzas",
     "fact3": "✔️ Solo personas reales, conectando"
   },
@@ -35,8 +35,8 @@
   },
   "story": {
     "heartAlt": "Corazón",
-    "heading": "¿Alguna vez te gustó alguien en un bar pero nunca hablaste con esa persona? Qué desperdicio, ¿verdad?",
-    "subheading": "Construimos MeItt para que ese momento no se desperdicie."
+    "heading": "¿Alguna vez te gustó alguien en un bar pero le hablaste? Qué desperdicio, ¿verdad?",
+    "subheading": "Construimos Meltt para que ese momento no se desperdicie."
   },
   "footer": {
     "logoAlt": "Meltt Logo",

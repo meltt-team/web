@@ -39,7 +39,7 @@ declare const messages: {
   "story": {
     "heartAlt": "Heart",
     "heading": "Ever liked someone at a bar but never talked to them? What a waste, right?",
-    "subheading": "We built MeItt so that moment doesn't go to waste."
+    "subheading": "We built Meltt so that moment doesn't go to waste."
   },
   "footer": {
     "logoAlt": "Meltt Logo",
