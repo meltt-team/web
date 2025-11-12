@@ -48,7 +48,7 @@ export default async function IndexPage({
         >
           <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px]">
             <Image
-              src="/phone-vector-2.svg"
+              src="/phone-vector.svg"
               alt="Phone"
               width={0}
               height={0}
@@ -65,7 +65,7 @@ export default async function IndexPage({
         >
           <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px]">
             <Image
-              src="/tablet-vector-2.svg"
+              src="/tablet-vector.svg"
               alt="Phone"
               width={0}
               height={0}
@@ -82,7 +82,7 @@ export default async function IndexPage({
         >
           <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px]">
             <Image
-              src="/desktop-vector-2.svg"
+              src="/desktop-vector.svg"
               alt="Phone"
               width={0}
               height={0}
@@ -100,7 +100,7 @@ export default async function IndexPage({
             <div className="max-w-4xl mx-auto flex flex-col px-6 pb-10 gap-6">
               <div className="flex flex-col text-left">
                 <Title />
-                <p className="text-base md:text-lg lg:text-2xl text-center text-gray">{t("description")}</p>
+                <p className="text-base mt-4 md:text-lg lg:text-2xl text-center text-gray">{t("description")}</p>
               </div>
 
               {/* CTA */}
