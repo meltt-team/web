@@ -12,10 +12,10 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = window.scrollY + 500;
 
       // Change logo color after scrolling 10px
-      if (currentScrollY > 100) {
+      if (currentScrollY > 500) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -26,19 +26,18 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const logo = !isScrolled ? "/logo_white.svg" : "/logo.svg";
+
   return (
     <header className="fixed left-0 right-0 top-0 z-50 bg-transparent transition-all duration-300">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Link href="/" className="flex items-center cursor-pointer">
           <Image
-            src="/logo.svg"
+            src={logo}
             alt="Logo"
             width={100}
             height={30}
             priority
-            className={`transition-all duration-300 ${
-              isScrolled ? "" : "invert"
-            }`}
           />
         </Link>
       </div>

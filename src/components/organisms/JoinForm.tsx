@@ -52,6 +52,7 @@ export default function JoinForm({ attribution }: JoinFormProps) {
       <Input
         type="email"
         required
+        id="email-signup-input"
         placeholder={t("emailPlaceholder")}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
@@ -74,7 +75,7 @@ export default function JoinForm({ attribution }: JoinFormProps) {
           </svg>
         }
       />
-      <Button type="submit" disabled={state === "loading" || state === "done"}>
+      <Button id="email-signup" type="submit" disabled={state === "loading" || state === "done"}>
         {state === "loading" ? t("joining") : t("joinButton")}
       </Button>
       {state === "done" && (

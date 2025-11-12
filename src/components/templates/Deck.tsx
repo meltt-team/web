@@ -25,7 +25,7 @@ function Deck() {
       {/* Container for the deck */}
       <div className="relative flex justify-center items-center">
         {/* Back card - slightly rotated */}
-        <div className="relative">
+        <div className="relative md:w-1/2">
           <Image
             src="/couple.png"
             alt={t("profileAlt")}

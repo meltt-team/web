@@ -33,7 +33,7 @@ function HowItWorks() {
 
         <div className="flex flex-col gap-12 sm:gap-16">
           {steps.map((step) => (
-            <div key={step.number} className="flex gap-6 items-start">
+            <div key={step.number} className="flex gap-4 items-start">
               {/* Number Circle */}
               <div className="flex-shrink-0 w-8 h-8 sm:w-16 sm:h-16 rounded-full border border-border flex items-center justify-center">
                 <span className="text-2xl sm:text-3xl font-vollkorn text-primary">
@@ -43,10 +43,10 @@ function HowItWorks() {
 
               {/* Content */}
               <div className="flex-1 pt-1">
-                <h3 className="text-md sm:text-xl font-inter font-bold text-primary mb-1">
+                <h3 className="text-base sm:text-xl font-inter font-bold text-primary mb-1">
                   {step.title}
                 </h3>
-                <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed">
+                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                   {step.description}
                 </p>
               </div>

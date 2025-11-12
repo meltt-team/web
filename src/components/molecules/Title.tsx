@@ -13,7 +13,7 @@ function Title({ color = "black" }: TitleProps) {
 
   return (
     <h1
-      className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-vollkorn leading-tight ${textColor} text-left md:text-center`}
+      className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-vollkorn leading-tight ${textColor} text-center md:text-center`}
     >
       {t.rich("landing.titleLine1", {
         bold: (chunks) => <strong>{chunks}</strong>,

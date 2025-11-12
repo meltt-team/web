@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 function Story() {
   const t = useTranslations("story");
   return (
-    <div className="w-full max-w-4xl mx-auto px-4">
+    <div className="w-full max-w-4xl mx-auto px-4 pb-[50px]">
       <div className="flex flex-col items-center text-center">
         {/* Heart Icon with Glow Effect */}
         <div className="relative z-10 flex items-center justify-center h-full mb-8">

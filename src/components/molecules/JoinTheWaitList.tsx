@@ -21,13 +21,18 @@ function JoinTheWaitList() {
     return params;
   }, [searchParams]);
 
-  console.log(attribution);
-
   const handleJoinTheWaitList = () => {
     plausible?.(events.waitlist_cta_clicked, { props: attribution });
-    const emailSection = document.getElementById("email-signup");
-    if (emailSection) {
-      emailSection.scrollIntoView({ behavior: "smooth", block: "center" });
+    const joinButton = document.getElementById("email-signup");
+    if (joinButton) {
+      joinButton.scrollIntoView({ behavior: "smooth", block: "center" });
+      // focus the email input
+      const emailInput = document.getElementById("email-signup-input");
+      if (emailInput) {
+        setTimeout(() => {
+          (emailInput as HTMLInputElement).focus();
+        }, 500);
+      }
     }
   };
 

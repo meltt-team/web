@@ -9,7 +9,7 @@ function Facts() {
   const facts = [t("fact1"), t("fact2"), t("fact3")];
 
   return (
-    <div className="w-full max-w-3xl mx-auto px-2">
+    <div className="w-full max-w-3xl mx-auto px-2 pb-[50px]">
       <div className="flex flex-col gap-4">
         {facts.map((fact, index) => (
           <div key={index} className="flex justify-center items-center">

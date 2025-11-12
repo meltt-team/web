@@ -100,7 +100,7 @@ export default async function IndexPage({
             <div className="max-w-4xl mx-auto flex flex-col px-6 pb-10 gap-6">
               <div className="flex flex-col text-left">
                 <Title />
-                <p className="text-base md:text-lg lg:text-2xl md:text-center text-gray">{t("description")}</p>
+                <p className="text-base md:text-lg lg:text-2xl text-center text-gray">{t("description")}</p>
               </div>
 
               {/* CTA */}
