@@ -119,13 +119,6 @@ export default async function IndexPage({
         </div>
       </section>
 
-      {/* Facts Section */}
-      <section className="bg-white w-full flex items-center justify-center">
-        <div className="container mx-auto px-6 sm:px-16 flex flex-col py-10">
-          <Facts />
-        </div>
-      </section>
-
       {/* Deck Section */}
       <section className="bg-white w-full flex items-center justify-center">
         <div className="container mx-auto px-6 sm:px-16 flex flex-col gap-16">

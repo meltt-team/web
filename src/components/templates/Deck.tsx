@@ -21,9 +21,9 @@ function Deck() {
   ];
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto px-4">
+    <div className="relative w-full">
       {/* Container for the deck */}
-      <div className="relative flex justify-center items-center">
+      <div className="relative flex justify-center">
         {/* Back card - slightly rotated */}
         <div className="relative md:w-1/2">
           <Image

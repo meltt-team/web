@@ -23,17 +23,11 @@ function JoinTheWaitList() {
 
   const handleJoinTheWaitList = () => {
     plausible?.(events.waitlist_cta_clicked, { props: attribution });
-    const joinButton = document.getElementById("email-signup");
-    if (joinButton) {
-      joinButton.scrollIntoView({ behavior: "smooth", block: "center" });
-      // focus the email input
-      const emailInput = document.getElementById("email-signup-input");
-      if (emailInput) {
-        setTimeout(() => {
-          (emailInput as HTMLInputElement).focus();
-        }, 500);
-      }
-    }
+    // Scroll to the bottom of the page
+    window.scrollTo({ 
+      top: document.documentElement.scrollHeight, 
+      behavior: "smooth" 
+    });
   };
 
   return (
