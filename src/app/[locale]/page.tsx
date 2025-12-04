@@ -42,11 +42,17 @@ export default async function IndexPage({
       <div className="min-h-screen flex flex-col">
         {/* SPACER - Grows to push content to bottom */}
         {/* Mobile - Phone Background */}
-        <div
-          className="flex-grow relative bg-cover bg-center bg-no-repeat block md:hidden"
-          style={{ backgroundImage: "url('/phone-image.png')" }}
-        >
-          <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px]">
+        <div className="flex-grow relative block md:hidden">
+          <Image
+            src="/phone-image.webp"
+            alt="Background"
+            fill
+            priority
+            quality={85}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+          <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px] z-10">
             <Image
               src="/phone-vector.svg"
               alt="Phone"
@@ -59,14 +65,20 @@ export default async function IndexPage({
         </div>
 
         {/* Tablet - Tablet Background */}
-        <div
-          className="flex-grow relative bg-cover bg-center bg-no-repeat hidden md:block lg:hidden"
-          style={{ backgroundImage: "url('/tablet-image.png')" }}
-        >
-          <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px]">
+        <div className="flex-grow relative hidden md:block lg:hidden">
+          <Image
+            src="/tablet-image.webp"
+            alt="Background"
+            fill
+            priority
+            quality={85}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+          <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px] z-10">
             <Image
               src="/tablet-vector.svg"
-              alt="Phone"
+              alt="Tablet"
               width={0}
               height={0}
               sizes="100vw"
@@ -76,14 +88,20 @@ export default async function IndexPage({
         </div>
 
         {/* Desktop - Desktop Background */}
-        <div
-          className="flex-grow relative bg-cover bg-center bg-no-repeat hidden lg:block"
-          style={{ backgroundImage: "url('/desktop-image.png')" }}
-        >
-          <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px]">
+        <div className="flex-grow relative hidden lg:block">
+          <Image
+            src="/desktop-image.webp"
+            alt="Background"
+            fill
+            priority
+            quality={85}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+          <div className="flex justify-center w-full absolute bottom-0 translate-y-[2px] z-10">
             <Image
               src="/desktop-vector.svg"
-              alt="Phone"
+              alt="Desktop"
               width={0}
               height={0}
               sizes="100vw"
