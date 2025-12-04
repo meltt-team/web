@@ -20,17 +20,6 @@ const titleVariants: Variants = {
   },
 };
 
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.25,
-    },
-  },
-};
-
 const stepVariants: Variants = {
   hidden: {
     opacity: 0,
@@ -80,38 +69,42 @@ function HowItWorks() {
           {t("title")}
         </motion.h2>
 
-        <motion.div
-          className="flex flex-col gap-12 sm:gap-16"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2, margin: "-25% 0px -25% 0px" }}
-        >
-          {steps.map((step) => (
-            <motion.div
-              key={step.number}
-              className="flex gap-4 items-start"
-              variants={stepVariants}
-            >
-              {/* Number Circle */}
-              <div className="flex-shrink-0 w-8 h-8 sm:w-16 sm:h-16 rounded-full border border-border flex items-center justify-center">
-                <span className="text-2xl sm:text-3xl font-vollkorn text-primary">
-                  {step.number}
-                </span>
-              </div>
+        <div className="flex flex-col gap-12 sm:gap-16">
+          {steps.map((step, index) => {
+            const marginPercent = 15 + index * 10; // 15%, 25%, 35%
+            return (
+              <motion.div
+                key={step.number}
+                className="flex gap-4 items-start"
+                variants={stepVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                  once: true,
+                  amount: 0.8,
+                  margin: `-${marginPercent}% 0px -${marginPercent}% 0px`,
+                }}
+              >
+                {/* Number Circle */}
+                <div className="flex-shrink-0 w-8 h-8 sm:w-16 sm:h-16 rounded-full border border-border flex items-center justify-center">
+                  <span className="text-2xl sm:text-3xl font-vollkorn text-primary">
+                    {step.number}
+                  </span>
+                </div>
 
-              {/* Content */}
-              <div className="flex-1 pt-1">
-                <h3 className="text-base sm:text-xl font-inter font-bold text-primary mb-1">
-                  {step.title}
-                </h3>
-                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+                {/* Content */}
+                <div className="flex-1 pt-1">
+                  <h3 className="text-base sm:text-xl font-inter font-bold text-primary mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
