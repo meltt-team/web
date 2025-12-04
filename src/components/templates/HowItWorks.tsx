@@ -1,7 +1,50 @@
 "use client";
 
 // External modules and React-related imports
+import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
+
+// Animation variants
+const titleVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    x: -50,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.35,
+      ease: [0.4, 0, 0.2, 1] as const,
+    },
+  },
+};
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.25,
+    },
+  },
+};
+
+const stepVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    x: -60,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1] as const,
+    },
+  },
+};
 
 function HowItWorks() {
   const t = useTranslations("howItWorks");
@@ -27,13 +70,29 @@ function HowItWorks() {
   return (
     <section className="w-full bg-background pt-16">
       <div className="container mx-auto sm:px-16 max-w-4xl">
-        <h2 className="text-4xl sm:text-5xl font-vollkorn text-primary text-center font-semibold mb-8">
+        <motion.h2
+          className="text-4xl sm:text-5xl font-vollkorn text-primary text-center font-semibold mb-8"
+          variants={titleVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3, margin: "-20% 0px -20% 0px" }}
+        >
           {t("title")}
-        </h2>
+        </motion.h2>
 
-        <div className="flex flex-col gap-12 sm:gap-16">
+        <motion.div
+          className="flex flex-col gap-12 sm:gap-16"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2, margin: "-25% 0px -25% 0px" }}
+        >
           {steps.map((step) => (
-            <div key={step.number} className="flex gap-4 items-start">
+            <motion.div
+              key={step.number}
+              className="flex gap-4 items-start"
+              variants={stepVariants}
+            >
               {/* Number Circle */}
               <div className="flex-shrink-0 w-8 h-8 sm:w-16 sm:h-16 rounded-full border border-border flex items-center justify-center">
                 <span className="text-2xl sm:text-3xl font-vollkorn text-primary">
@@ -50,9 +109,9 @@ function HowItWorks() {
                   {step.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

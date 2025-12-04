@@ -2,12 +2,27 @@
 
 // External modules and React-related imports
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 const colorMap = {
   pink: "#FAC2EA",
   yellow: "#EFDE4E",
   white: "#FFFFFF",
+};
+
+// Animation variants
+const interestVariants: Variants = {
+  hidden: {
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    transition: {
+      duration: 0.25,
+      ease: [0.34, 1.56, 0.64, 1] as const, // Spring-like easeOut for popup effect
+    },
+  },
 };
 
 function Deck() {
@@ -18,6 +33,13 @@ function Deck() {
     { label: t("club"), color: "white" },
     { label: t("bar"), color: "pink" },
     { label: t("events"), color: "white" },
+  ];
+
+  const positions = [
+    "top-[-00px] translate-x-[16px]",
+    "top-[40px] translate-x-[-16px]",
+    "top-[80px] translate-x-[16px]",
+    "top-[120px] translate-x-[-16px]",
   ];
 
   return (
@@ -37,44 +59,34 @@ function Deck() {
           />
         </div>
 
-        {/* Interest tags - Left side */}
-        <div
-          className={`px-4 py-1 text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[-00px] z-30 translate-x-[16px]`}
-          style={{
-            boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
-            backgroundColor: colorMap["yellow"],
-          }}
-        >
-          <p>{interests[0].label}</p>
-        </div>
-        <div
-          className={`px-4 py-1 border border-border text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[40px] z-30 translate-x-[-16px]`}
-          style={{
-            boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
-            backgroundColor: colorMap["white"],
-          }}
-        >
-          <p>{interests[1].label}</p>
-        </div>
-
-        <div
-          className={`px-4 py-1 text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[80px] z-30 translate-x-[16px]`}
-          style={{
-            boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
-            backgroundColor: colorMap["pink"],
-          }}
-        >
-          <p>{interests[2].label}</p>
-        </div>
-        <div
-          className={`px-4 py-1 border border-border text-center rounded-full font-inter font-bold text-sm text-primary absolute top-[120px] z-30 translate-x-[-16px]`}
-          style={{
-            boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
-            backgroundColor: colorMap["white"],
-          }}
-        >
-          <p>{interests[3].label}</p>
-        </div>
+        {/* Interest tags */}
+        {interests.map((interest, index) => {
+          const marginPercent = 15 + index * 10; // 15%, 25%, 35%, 45%
+          return (
+            <motion.div
+              key={index}
+              className={`px-4 py-1 ${
+                interest.color === "white" ? "border border-border" : ""
+              } text-center rounded-full font-inter font-bold text-sm text-primary absolute ${
+                positions[index]
+              } z-30`}
+              style={{
+                boxShadow: "0 2px 8px rgba(21, 19, 19, 0.1)",
+                backgroundColor: colorMap[interest.color as keyof typeof colorMap],
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{
+                once: true,
+                amount: 0.8,
+                margin: `-${marginPercent}% 0px -${marginPercent}% 0px`,
+              }}
+              variants={interestVariants}
+            >
+              <p>{interest.label}</p>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
