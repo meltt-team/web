@@ -46,7 +46,7 @@ declare const messages: {
     "tagline": "The dating app that happens in real life."
   },
   "metadata": {
-    "title": "Mellt | Right place. Right time.",
+    "title": "Meltt | Right place. Right time.",
     "description": "Right place. Right time."
   }
 };
