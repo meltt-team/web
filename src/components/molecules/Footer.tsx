@@ -3,6 +3,7 @@
 // External modules and React-related imports
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 function Footer() {
   const t = useTranslations("footer");
@@ -16,6 +17,19 @@ function Footer() {
           {/* Copyright Text */}
           <div className="text-center text-md font-inter font-bold">
             {t("tagline")}
+          </div>
+
+          {/* Legal Links */}
+          <div className="flex gap-6 text-sm text-gray-500">
+            <Link href="/privacy-policy" className="hover:text-gray-800 transition-colors">
+              {t("privacyPolicy")}
+            </Link>
+            <Link href="/terms" className="hover:text-gray-800 transition-colors">
+              {t("termsOfUse")}
+            </Link>
+            <Link href="/safety" className="hover:text-gray-800 transition-colors">
+              {t("safetyGuidelines")}
+            </Link>
           </div>
 
           {/* Instagram Link */}

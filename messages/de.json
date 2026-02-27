@@ -40,7 +40,10 @@
   },
   "footer": {
     "logoAlt": "Meltt Logo",
-    "tagline": "Die Dating-App, die im echten Leben passiert."
+    "tagline": "Die Dating-App, die im echten Leben passiert.",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfUse": "Nutzungsbedingungen",
+    "safetyGuidelines": "Sicherheitshinweise"
   },
   "metadata": {
     "title": "Meltt | Der richtige Ort. Der richtige Moment.",

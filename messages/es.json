@@ -40,7 +40,10 @@
   },
   "footer": {
     "logoAlt": "Meltt Logo",
-    "tagline": "La app de citas que pasa en la vida real."
+    "tagline": "La app de citas que pasa en la vida real.",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfUse": "Términos de uso",
+    "safetyGuidelines": "Guía de seguridad"
   },
   "metadata": {
     "title": "Meltt | Lugar correcto. Momento correcto.",

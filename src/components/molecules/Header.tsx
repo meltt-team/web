@@ -5,10 +5,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 // Application utilities and constants
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+  const isSubpage = pathname !== "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +28,7 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const logo = !isScrolled ? "/logo_white.svg" : "/logo.svg";
+  const logo = isSubpage || isScrolled ? "/logo.svg" : "/logo_white.svg";
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 bg-transparent transition-all duration-300">

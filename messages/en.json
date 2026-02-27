@@ -40,7 +40,10 @@
   },
   "footer": {
     "logoAlt": "Meltt Logo",
-    "tagline": "The dating app that happens in real life."
+    "tagline": "The dating app that happens in real life.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "safetyGuidelines": "Safety Guidelines"
   },
   "metadata": {
     "title": "Meltt | Right place. Right time.",
