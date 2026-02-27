@@ -1,7 +1,7 @@
 import { Locale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
-export default async function PrivacyPage({ params }: PageProps<"/[locale]/privacy">) {
+export default async function PrivacyPage({ params }: PageProps<"/[locale]/privacy-policy">) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
 
