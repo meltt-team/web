@@ -12,6 +12,7 @@ export const routing = defineRouting({
     '/success': '/success',
     '/privacy-policy': '/privacy-policy',
     '/terms': '/terms',
-    '/safety': '/safety'
+    '/safety': '/safety',
+    '/contact': '/contact'
   }
 });

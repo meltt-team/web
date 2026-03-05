@@ -43,7 +43,25 @@
     "tagline": "Die Dating-App, die im echten Leben passiert.",
     "privacyPolicy": "Datenschutzerklärung",
     "termsOfUse": "Nutzungsbedingungen",
-    "safetyGuidelines": "Sicherheitshinweise"
+    "safetyGuidelines": "Sicherheitshinweise",
+    "contact": "Kontakt & Support"
+  },
+  "contact": {
+    "title": "Kontakt & Support",
+    "subtitle": "Hast du eine Frage, ein Problem oder willst einfach Hallo sagen? Wir sind hier, um zu helfen.",
+    "getInTouch": "Kontakt aufnehmen",
+    "getInTouchDescription": "Bei Fragen, Feedback oder Support-Anfragen erreichst du uns unter:",
+    "faqTitle": "Häufig gestellte Fragen",
+    "faq1Question": "Wie funktioniert Meltt?",
+    "faq1Answer": "Mit Meltt kannst du Leute entdecken und dich mit ihnen verbinden, die gerade am selben Ort oder Event sind wie du. Check ein, schau wer da ist und matche im echten Leben.",
+    "faq2Question": "Wie lösche ich mein Konto?",
+    "faq2Answer": "Du kannst dein Konto in den App-Einstellungen löschen. Alle deine Daten werden dauerhaft entfernt.",
+    "faq3Question": "Ich habe einen Fehler gefunden oder einen Vorschlag.",
+    "faq3Answer": "Wir freuen uns über dein Feedback! Schreib uns eine E-Mail und wir melden uns so schnell wie möglich.",
+    "helpfulLinks": "Nützliche Links",
+    "privacyPolicyLink": "Datenschutzerklärung",
+    "termsLink": "Nutzungsbedingungen",
+    "safetyLink": "Sicherheitshinweise"
   },
   "metadata": {
     "title": "Meltt | Der richtige Ort. Der richtige Moment.",

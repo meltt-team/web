@@ -43,7 +43,25 @@
     "tagline": "La app de citas que pasa en la vida real.",
     "privacyPolicy": "Política de privacidad",
     "termsOfUse": "Términos de uso",
-    "safetyGuidelines": "Guía de seguridad"
+    "safetyGuidelines": "Guía de seguridad",
+    "contact": "Contacto y Soporte"
+  },
+  "contact": {
+    "title": "Contacto y Soporte",
+    "subtitle": "¿Tienes una pregunta, un problema o simplemente quieres saludar? Estamos aquí para ayudarte.",
+    "getInTouch": "Ponte en contacto",
+    "getInTouchDescription": "Para cualquier pregunta, comentario o solicitud de soporte, escríbenos a:",
+    "faqTitle": "Preguntas frecuentes",
+    "faq1Question": "¿Cómo funciona Meltt?",
+    "faq1Answer": "Meltt te permite descubrir y conectar con personas que están físicamente en el mismo lugar o evento que tú. Haz check-in, mira quién está cerca y conecta en la vida real.",
+    "faq2Question": "¿Cómo elimino mi cuenta?",
+    "faq2Answer": "Puedes eliminar tu cuenta desde los ajustes de la app. Todos tus datos serán eliminados permanentemente.",
+    "faq3Question": "Encontré un error o tengo una sugerencia.",
+    "faq3Answer": "¡Nos encantaría saberlo! Envíanos un correo y te responderemos lo antes posible.",
+    "helpfulLinks": "Enlaces útiles",
+    "privacyPolicyLink": "Política de privacidad",
+    "termsLink": "Términos de uso",
+    "safetyLink": "Guía de seguridad"
   },
   "metadata": {
     "title": "Meltt | Lugar correcto. Momento correcto.",

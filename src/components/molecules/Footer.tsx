@@ -30,6 +30,9 @@ function Footer() {
             <Link href="/safety" className="hover:text-gray-800 transition-colors">
               {t("safetyGuidelines")}
             </Link>
+            <Link href="/contact" className="hover:text-gray-800 transition-colors">
+              {t("contact")}
+            </Link>
           </div>
 
           {/* Instagram Link */}

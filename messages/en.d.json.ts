@@ -43,7 +43,28 @@ declare const messages: {
   },
   "footer": {
     "logoAlt": "Meltt Logo",
-    "tagline": "The dating app that happens in real life."
+    "tagline": "The dating app that happens in real life.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "safetyGuidelines": "Safety Guidelines",
+    "contact": "Contact & Support"
+  },
+  "contact": {
+    "title": "Contact & Support",
+    "subtitle": "Have a question, issue, or just want to say hi? We're here to help.",
+    "getInTouch": "Get in Touch",
+    "getInTouchDescription": "For any questions, feedback, or support requests, reach out to us at:",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Question": "How does Meltt work?",
+    "faq1Answer": "Meltt lets you discover and connect with people who are physically at the same venue or event as you. Check in, see who's around, and match in real life.",
+    "faq2Question": "How do I delete my account?",
+    "faq2Answer": "You can delete your account from the app settings. All your data will be permanently removed.",
+    "faq3Question": "I found a bug or have a suggestion.",
+    "faq3Answer": "We'd love to hear from you! Send us an email and we'll get back to you as soon as possible.",
+    "helpfulLinks": "Helpful Links",
+    "privacyPolicyLink": "Privacy Policy",
+    "termsLink": "Terms of Use",
+    "safetyLink": "Safety Guidelines"
   },
   "metadata": {
     "title": "Meltt | Right place. Right time.",
