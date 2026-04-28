@@ -13,6 +13,7 @@ import "../globals.css";
 import Header from "@/components/molecules/Header";
 import Footer from "@/components/molecules/Footer";
 import PlausibleProvider from "next-plausible";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -67,6 +68,7 @@ export default async function LocaleLayout({
             <Footer />
           </PlausibleProvider>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
